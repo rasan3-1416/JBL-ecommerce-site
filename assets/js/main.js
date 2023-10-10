@@ -42,9 +42,14 @@ let swiperFavorite = new Swiper('.favorite__swiper', {
         }
     }
 })
-
 /*=============== SHOW SCROLL UP ===============*/
-
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up')
+    // When the scroll is more than 350 viewport height, add the show-scroll class to a tag with the class scroll__up class
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                        : scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
