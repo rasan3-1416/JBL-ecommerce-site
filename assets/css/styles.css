@@ -608,7 +608,56 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 340px) {
+  /* ========== home ========== */
+  .container {
+    margin-inline: 1rem;
+  }
+  .home__container {
+    padding: 7.5rem 0rem;
+  }
+  .home__img {
+    width: 180px;
+  }
+  .home__title {
+    font-size: 8rem;
+  }
+  .home__social {
+    left: 0;
+  }
+  /* ========== About ========== */
+  .model__img {
+    width: 240px;
+  }
+  .model__tooltip-text {
+    font-size: var(--smaller-font-size);
+    transform: translate(42px, -40px);
+  }
+  .model__tooltip-1 .model__tooltip-text,
+  .model__tooltip-2 .model__tooltip-text {
+    transform: translate(40px, -40px) scaleX(-1);
+  }
+  .model__tooltip-1 {
+    top: 3.5rem;
+    left: 4rem;
+  }
+  .model__tooltip-2 {
+    top: 0;
+  }
+  .model__tooltip-3 {
+    bottom: 2rem;
+    left: 3rem;
+  }
+  .model__tooltip-4 {
+    bottom: 6rem;
+    right: 4rem;
+  }
+  /* ========== Sponsor ========== */
+  .sponsor__container {
+    gap: 4rem 2rem;
+  }
 
+}
 
 /* For medium devices */
 
