@@ -268,7 +268,7 @@ img {
   row-gap: 6rem;
   position: absolute;
   top: 9rem;
-  left: 1.5rem;
+  left: 0rem;
 }
 
 .home__social-text {
@@ -621,9 +621,6 @@ img {
   }
   .home__title {
     font-size: 8rem;
-  }
-  .home__social {
-    left: 0;
   }
   /* ========== About ========== */
   .model__img {
