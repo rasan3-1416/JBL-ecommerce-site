@@ -50,18 +50,6 @@ const scrollUpView = () => {
                         : scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUpView)
-/*=============== Smooth Scrolling Bahaviour ===============*/
-const scrollToTop = () => {
-    let position = document.body.scrollTop || document.documentElement.scrollTop
-    if(position) {
-        window.scrollBy(0, -Math.max(1, Math.floor(position / 10)))
-        scrollAnimation = setTimeout("scrollToTop()", 3000)
-    }else {
-        clearTimeout(scrollAnimation)
-    }
-    return false;
-}
-scrollUp.addEventListener('click', scrollToTop)
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
 const scrollActive = () => {
