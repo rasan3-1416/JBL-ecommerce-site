@@ -43,13 +43,25 @@ let swiperFavorite = new Swiper('.favorite__swiper', {
     }
 })
 /*=============== SHOW SCROLL UP ===============*/
-const scrollUp = () => {
-    const scrollUp = document.getElementById('scroll-up')
+const scrollUp = document.getElementById('scroll-up')
+const scrollUpView = () => {
     // When the scroll is more than 350 viewport height, add the show-scroll class to a tag with the class scroll__up class
     this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
                         : scrollUp.classList.remove('show-scroll')
 }
-window.addEventListener('scroll', scrollUp)
+window.addEventListener('scroll', scrollUpView)
+/*=============== Smooth Scrolling Bahaviour ===============*/
+const scrollToTop = () => {
+    let position = document.body.scrollTop || document.documentElement.scrollTop
+    if(position) {
+        window.scrollBy(0, -Math.max(1, Math.floor(position / 10)))
+        scrollAnimation = setTimeout("scrollToTop()", 3000)
+    }else {
+        clearTimeout(scrollAnimation)
+    }
+    return false;
+}
+scrollUp.addEventListener('click', scrollToTop)
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
 const scrollActive = () => {
