@@ -68,3 +68,26 @@ const scrollActive = () => {
 }
 window.addEventListener('scroll', scrollActive)
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true // Animation repeat 
+})
+// Home Section
+sr.reveal('.home__social')
+sr.reveal('.home__title span:nth-child(1)', {origin: 'left', opacity: 1})
+sr.reveal('.home__title span:nth-child(3)', {origin: 'right', opacity: 1})
+sr.reveal('.home__tooltip, .home__button', {origin: 'bottom'})
+// About Section
+sr.reveal('.about__data', {origin: 'left'})
+sr.reveal('.about__img', {origin: 'right'})
+// Favorite Section
+sr.reveal('.favorite__container')
+// Model Section
+sr.reveal('.model__tooltip', {origin: 'right'})
+sr.reveal('.model__button', {origin: 'bottom'})
+sr.reveal('.sponsor__container', {origin: 'top'})
+// Footer Section
+sr.reveal('.footer__container', {origin: 'bottom'})
