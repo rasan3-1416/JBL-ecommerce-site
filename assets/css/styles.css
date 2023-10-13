@@ -675,5 +675,32 @@ img {
     justify-content: initial;
   }
 }
-
+@media screen and (min-width: 768px) {
+  /* ========== Home ========== */
+  .home__img {
+    width: 320px;
+  }
+  .home__title {
+    font-size: 16rem;
+    top: -4rem;
+  }
+  .home__social {
+    top: 0;
+    bottom: 0;
+    align-content: center;
+    left: 1.5rem;
+  }
+  /* ========== Sponsor ========== */
+  .sponsor__container {
+    grid-template-columns: repeat(4, max-content);
+  }
+  /* ========== Footer ========== */
+  .footer__container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-around;
+  }
+  .footer__data {
+    column-gap: 4rem;
+  }
+}
 /* For large devices */
