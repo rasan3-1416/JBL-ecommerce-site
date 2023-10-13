@@ -657,6 +657,23 @@ img {
 }
 
 /* For medium devices */
-
+@media screen and (min-width: 576px) {
+  /* ========== About ========== */
+  .about__container {
+    grid-template-columns: 380px;
+    justify-content: center;
+  }
+  /* ========== Footer ========== */
+  .footer__data {
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 3rem;
+  }
+  .footer__group {
+    grid-column: initial;
+  }
+  .footer__social {
+    justify-content: initial;
+  }
+}
 
 /* For large devices */
