@@ -1,5 +1,5 @@
 # Responsive Headphones Website
-## [Visit Live Site](https://rasan3-1416.github.io/JBL-ecommerce-site/)
+## [Visit Live Site](https://jbl-ecommerce.vercel.app/)
 ### Responsive Headphones Website
 
 The project I clone from [Bedimcode](https://www.youtube.com/c/Bedimcode) and website template: [Responsive JBL Website](https://youtu.be/BIXsjKxPo8o?si=KruOfXd9FUMR29Tr)
